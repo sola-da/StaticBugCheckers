@@ -13,7 +13,7 @@ EP_URL="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_ant/${E
 
 # This is the Infer release used in the study.
 # INF_VER="0.13.0"
-# But it does not come with ready binary. It requires manual build 
+# But it does not come with ready binary. It requires manual build
 # and meeting all Infer dependencies. This is cumbersome but doable.
 # NOTE for 0.13.0: INF_BIN: INF_ROOT/infer/bin/infer
 # So instead, we use a more recent Infer release, which has a ready-made binary.
@@ -33,13 +33,13 @@ SB_URL="http://repo.maven.apache.org/maven2/com/github/spotbugs/spotbugs/${SB_VE
 mkdir $CHECKERS_ROOT
 
 echo
-echo ">>> Downloading Google ErrorProne <<<"
+echo ">>> Downloading and extracting static checkers <<<"
+
+echo ">>> Preparing Google's ErrorProne"
 (cd $CHECKERS_ROOT && wget -q $EP_URL)
 
-echo
-echo ">>> Downloading and extracting Facebook Infer <<<"
+echo ">>> Preparing Facebook's Infer"
 curl -sSL $INF_URL | tar -C $CHECKERS_ROOT -xJ
 
-echo
-echo ">>> Downloading and extracting SpotBugs <<<"
-wget -cq $SB_URL -O - | tar -xz -C $CHECKERS_ROOT 
+echo ">>> Preparing SpotBugs"
+wget -cq $SB_URL -O - | tar -xz -C $CHECKERS_ROOT
