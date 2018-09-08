@@ -2,7 +2,7 @@
 
 **Note:**
 *Scripts in this directory should be run from the top level of the
-repository ./` and not from the `./scritps/` itself.*
+repository `./` and not from the `./scritps/` itself.*
 
 ### Contents:
 
