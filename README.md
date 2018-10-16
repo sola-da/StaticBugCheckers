@@ -39,16 +39,23 @@ ASE 2018 paper.
 
 ## Repository structure and contents
 
+Study results:
+
+- [`./results/`](results/README.md)
+contains tables, figures, and charts detailing the findings of our study. You
+will find more data available in this folder than what is in the ASE2018 paper
+due to space limitation while publishing the paper.
+
 **All ``bash`` and ``python`` scripts have descriptive names.**
 
-- `./scripts/`
+- [`./scripts/`](scritps)
 contains the driver script `do_study.sh` which runs the entire study
 pipeline. This directory also contains modular scripts to run many parts of the
 study separately provided that the specific scripts requirements are met.
 *All scripts in this directory should be run from the top level of the
 repository ```./``` and not from the ```./scritps/``` itself.*
 
-- `./python/`
+- [`./python/`](python)
 contains all python scripts which perform the actual study steps such as
 checking out the actual bugs from Defects4J, running the static analyzers
 on the bugs set, analyzing the checkers output, ..., etc. These python scripts
