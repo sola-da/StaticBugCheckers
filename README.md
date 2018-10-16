@@ -41,7 +41,7 @@ ASE 2018 paper.
 
 Study results:
 
-- [`./results/`](results/README.md)
+- [`./results/`](results)
 contains tables, figures, and charts detailing the findings of our study. You
 will find more data available in this folder than what is in the ASE2018 paper
 due to space limitation while publishing the paper.
