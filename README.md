@@ -48,7 +48,7 @@ due to space limitation while publishing the paper.
 
 **All ``bash`` and ``python`` scripts have descriptive names.**
 
-- [`./scripts/`](scritps)
+- [`./scripts/`](scripts)
 contains the driver script `do_study.sh` which runs the entire study
 pipeline. This directory also contains modular scripts to run many parts of the
 study separately provided that the specific scripts requirements are met.

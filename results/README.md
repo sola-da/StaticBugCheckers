@@ -14,11 +14,14 @@ In the following, we show some statistics about Defects4J bugs used in our study
 <image src="defects4j/hist_file-1.png" width=450/>
 (a) Number of buggy files.
 
+
 <image src="defects4j/hist_diff-1.png" width=450/>
 (b) Total size of diffs between buggy and fixed files.
 
+
 <image src="defects4j/hist_loc-1.png" width=450/>
 (c) Total size of buggy files.
+
 
 **Figure 3: Properties of the studied bugs.**
 
