@@ -30,9 +30,14 @@ ASE 2018 paper.
 
 - ### Our scripts
   - `bash`
-  - `curl`
-  - `wget`
-  - `python 3`
+  - `curl` (on Linux, use `apt-get install curl`)
+  - `wget` (on MacOS, if you have [brew](https://brew.sh/), use `brew install wget`)
+  - `python 3` (also `joblib` is required. Use `pip3 install joblib`)
+
+  - *For MacOS users*, `coreutils` is required too. Use `brew install coreutils`
+
+  - Based on our testing, `Java 8` is the most compatible with the static analyzers 
+  and Defects4J framework.
 
 - ### 3rd party tools
   - [Defects4J](https://github.com/rjust/defects4j) requirements has to be met.

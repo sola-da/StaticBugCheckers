@@ -5,7 +5,10 @@
 
 source ./scripts/config.sh
 
-echo 
+echo
+echo "**********************************************************************************************"
+echo "Running the study of static bug checkers and their effectiveness by Habib and Pradel [ASE2018]"
+echo "**********************************************************************************************"
 
 bash ./scripts/download_static_checkers.sh
 
@@ -19,4 +22,11 @@ bash ./scripts/execute_diff_based_approach.sh
 
 bash ./scripts/execute_warnings_based_approach.sh
 
+echo
+echo "*************************"
+echo "Done performing the study"
+echo "*************************"
+echo
+echo "Check the results in:"
+echo $STUDY_ROOT
 echo
